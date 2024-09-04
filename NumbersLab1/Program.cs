@@ -23,9 +23,10 @@ namespace NumbersLab1
 					Console.ForegroundColor = ConsoleColor.Red;
 				    Console.WriteLine("GOODBYE");
 					Console.ResetColor();
+					Console.ReadKey();
 					break;
                 }
-
+				
 				string regex = userInput;
 				Match match1 = Regex.Match(myNumbers, regex);
 
@@ -48,7 +49,7 @@ namespace NumbersLab1
 						Console.Write(myNumbers.Substring(startMatch, endMatch - startMatch));
 						Console.ResetColor();
 						Console.WriteLine(myNumbers.Substring(endMatch));
-						totalSum += long.Parse(matchedString);
+						
 
 					}
 					else
@@ -62,7 +63,9 @@ namespace NumbersLab1
                 }
 				
 				Console.ForegroundColor = ConsoleColor.Green;
-				Console.WriteLine($"Totalt = {totalSum}");
+				Console.WriteLine($"Total = {totalSum}");
+
+			
 
 
 			}
