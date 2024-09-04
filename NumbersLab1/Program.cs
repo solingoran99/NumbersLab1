@@ -60,7 +60,7 @@ namespace NumbersLab1
 				{
                     Console.WriteLine(myNumbers);
                 }
-				Console.ReadLine();
+				
 				Console.ForegroundColor = ConsoleColor.Green;
 				Console.WriteLine($"Totalt = {totalSum}");
 
